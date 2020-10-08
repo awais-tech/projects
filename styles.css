@@ -21,7 +21,7 @@ h3{
 }
 .hero{
 	background:url('pic.jpg') ;
-	background-size:cover; 
+	
 
 	height:100vh;             
     display:flex;
