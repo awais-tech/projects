@@ -1,4 +1,4 @@
-*{
+	*{
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
@@ -21,6 +21,7 @@ h3{
 }
 .hero{
 	background:url('pic.jpg') ;
+	background-size:cover; 
 
 	height:100vh;             
     display:flex;
