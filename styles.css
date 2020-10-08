@@ -20,7 +20,8 @@ h3{
 	font-size:1em;
 }
 .hero{
-	background:linear-gradient(to bottom right,#2196F3,#009688);
+	background:url('pic.jpg') ;
+
 	height:100vh;             
     display:flex;
  flex-direction:column;
@@ -30,41 +31,60 @@ h3{
 	
 }
 .menu{
+	position: sticky;
+	top:0;
+}
+ul{
 	width:100%;
-	background:yellow;
+	display: flex;
+	background:linear-gradient(to bottom right,#2196F3,#009688);
+	
+	
 	height:40px;
+	justify-content: space-around;
+
 }
-.menu ul{
-	text-align:center;
-}
+
 .menu ul li{
 	list-style:none;
-	display:inline;
+	  display: inline-block;
 }
 .menu ul li a{
  text-decoration:none;
  color:white;
- display:inline-block;
+display: block;
  line-height:40px;
- padding :0px 15px 0px 15px;
+ padding: 0px 4px;
+
 }
 
 .services{
 	width:100%;
-	background-color:hs1(0,0,95%);
+	background-color:hsl(0,0%,95%);
 	padding-top: 100px;
 	padding-bottom:100px;
 	text-align:center;
 }
+.ser:after{
+	  content: "";
+  background-color: red;
+  color: red;
+  width: 100px;
+  display: block;
+  height: 2px;
+  margin: auto;
+  margin-top: 10px;
+}
 .col-wrapper{
 	width:90%;
 	margin:auto;
-	padding-top:50px;;
+	padding-top:50px
 }
 .services-col{
 	width:33.33%;
 	float:left;
 	padding:10px 30px 10px 30px;
+	box-shadow:0px 2px 4px 1px rgba(0,0,0,0.05);
 }
 .services-col img{
 	width:80px;
@@ -80,7 +100,7 @@ h3{
 	padding-top:100px;
 	padding-bottom:100px;
  background-size: cover;
-	background-image:url(a.jpeg);
+	background-image:url(test.jpg);
 	text-align:center;
     background-attachment:fixed;
 	background-repeat:no-repeat;	
@@ -154,7 +174,7 @@ h3{
 		width:100%;
 		color:black;
 		padding:30px 5px 30px 5px;
-		background-color:yellow;
+		background:linear-gradient(to bottom right,#2196F3,#009688);
 		text-align:center;
 	}
   .cta::after{
@@ -178,6 +198,7 @@ h3{
 padding:30px 5px 30px 5px;
 text-align:center;
 background-color:#fff;
+
 }
 .form::after{
 	display:table;
@@ -189,6 +210,8 @@ background-color:#fff;
 	float:left;
 	padding:30px 5px 30px 5px;
 	text-align:center;
+	border-radius: 20%;
+	background:linear-gradient(to bottom right,#2196F3,#009688);
 			
 		}
 		.form2{
@@ -196,7 +219,7 @@ background-color:#fff;
 	padding:30px 5px 30px 5px;	
 	float:left;
 	padding-right:10%;
-		}
+	}
 
 .social{
 
@@ -210,25 +233,31 @@ background-color:#fff;
 	
 	color:white;
 	padding:15px;
-	background-color:blue
+	background-color:blue;
+
 	
 }
 
 .t{
 	
 	color:blue;
+
 	
 }
 
 .i{
 
 	color:red;
+	background:pink;
+
+
 
 }
 
 .l{
 	
 	color:blue;
+		background: lightblue;
 	
 }
 
@@ -242,6 +271,7 @@ background-color:#fff;
 	width:100%;
 	height:35px;
 	padding:0px 5px 0px 5px;
+	border-radius: 4%;
 
 
 
@@ -249,6 +279,8 @@ background-color:#fff;
 .msg{
 	width:100%;
 	height:250px;
+	border-radius: 4%;
+
 	
 }
 .send{
@@ -264,20 +296,35 @@ background-color:#fff;
 	background-color:#1b181f;
 	color:#eee;
 	width:100%;
+	text-align: center;
 }
 .fotter{
 	clear:both;
 	content:"";
 	display:table;
 }
-.fotter h2{
+.fotter h1{
 	color:#fff;
 	margin-bottom:30px;
+	
 }
 .footter-col{
 	width:33.33%;
 	float:left;
 	padding:5px 10px 5px 10px;
+}
+
+
+a:hover{
+	background: lightblue;
+	border-radius: 3px;
+
+}
+input:focus{
+  background-color: green;
+}
+textarea:focus{
+  background-color: green;
 }
 
  @media screen and (max-width: 500px){
