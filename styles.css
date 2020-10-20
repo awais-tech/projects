@@ -26,7 +26,7 @@ h3{
 	height:100vh;             
     display:flex;
  flex-direction:column;
- text-align:center;     /*   can use align-items*/
+ align-items:center;    /*   can use align-items*/
  justify-content:center;
  color:white;
 	
